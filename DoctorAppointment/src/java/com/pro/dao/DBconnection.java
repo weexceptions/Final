@@ -19,7 +19,7 @@ public class DBconnection {
     public static Connection getConnection(){
         Connection con=null;
         try {
-            con = DriverManager.getConnection("jdbc:derby://localhost:1527/DocAppointDB", "aksh", "aksh123");
+            con = DriverManager.getConnection("jdbc:derby://localhost:1527/DB", "root", "pass");
             System.out.println("Connection Successful");
         } catch (SQLException ex) {
             System.out.println("Connection Failed");
